@@ -1,0 +1,5 @@
+*.safetensors
+*.ckpt
+*.pth
+*.mp4
+*.bin

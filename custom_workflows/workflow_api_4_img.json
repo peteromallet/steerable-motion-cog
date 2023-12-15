@@ -1,0 +1,710 @@
+{
+  "10": {
+    "inputs": {
+      "text": "(worst quality, low quality:1.2)",
+      "clip": [
+        "189",
+        5
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "14": {
+    "inputs": {
+      "strength": 0.9,
+      "start_percent": 0,
+      "end_percent": 0.9,
+      "positive": [
+        "273",
+        0
+      ],
+      "negative": [
+        "10",
+        0
+      ],
+      "control_net": [
+        "15",
+        0
+      ],
+      "image": [
+        "18",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "15": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "16",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "16": {
+    "inputs": {
+      "start_percent": 0,
+      "control_net_weights": [
+        "244",
+        0
+      ],
+      "latent_keyframe": [
+        "172",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "18": {
+    "inputs": {
+      "image": "image-020.jpg",
+      "choose file to upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "172": {
+    "inputs": {
+      "index_strengths": "0=1.00, 1=0.61, 2=0.46, 3=0.41, 4=0.35, 5=0.30, 6=0.29, 7=0.30, 8=0.30, 9=0.30, 10=0.30, 11=0.30, 12=0.29, 13=0.27, 14=0.25, 15=0.25, 16=0.25, 17=0.25, 18=0.24, 19=0.21, 20=0.20, 21=0.20, 22=0.15, 23=0.08, 24=0.01, 25=0.00, 26=0.00, 27=0.00, 28=0.00, 29=0.00, 30=0.00, 31=0.00, 32=0.00, 33=0.00, 34=0.00, 35=0.00, 36=0.00, 37=0.00, 38=0.00, 39=0.00, 40=0.00, 41=0.00, 42=0.00, 43=0.00, 44=0.00, 45=0.00, 46=0.00, 47=0.00"
+    },
+    "class_type": "LatentKeyframeGroup"
+  },
+  "187": {
+    "inputs": {
+      "model_name": "mm_sd_v15_v2.ckpt",
+      "beta_schedule": "sqrt_linear (AnimateDiff)",
+      "model": [
+        "189",
+        0
+      ],
+      "context_options": [
+        "188",
+        0
+      ]
+    },
+    "class_type": "ADE_AnimateDiffLoaderWithContext"
+  },
+  "188": {
+    "inputs": {
+      "context_length": 16,
+      "context_stride": 2,
+      "context_overlap": 2,
+      "context_schedule": "uniform",
+      "closed_loop": false
+    },
+    "class_type": "ADE_AnimateDiffUniformContextOptions"
+  },
+  "189": {
+    "inputs": {
+      "ckpt_name": "Counterfeit-V3.0_fp32.safetensors",
+      "vae_name": "vae-ft-mse-840000-ema-pruned.safetensors",
+      "clip_skip": -2,
+      "lora_name": "None",
+      "lora_model_strength": 1,
+      "lora_clip_strength": 1,
+      "positive": "",
+      "negative": "",
+      "empty_latent_width": 512,
+      "empty_latent_height": 512,
+      "batch_size": 1,
+      "lora_stack": [
+        "196",
+        0
+      ]
+    },
+    "class_type": "Efficient Loader"
+  },
+  "192": {
+    "inputs": {
+      "batch_size": 64,
+      "width": 512,
+      "height": 512,
+      "resampling": "nearest-exact",
+      "X": 0,
+      "Y": 0,
+      "Z": 0,
+      "evolution": 0,
+      "frame": 0,
+      "scale": 5,
+      "octaves": 8,
+      "persistence": 1.5,
+      "lacunarity": 2,
+      "exponent": 4,
+      "brightness": 0,
+      "contrast": 0,
+      "clamp_min": 0,
+      "clamp_max": 1,
+      "seed": 552330119095209,
+      "device": "cuda",
+      "optional_vae": [
+        "189",
+        4
+      ]
+    },
+    "class_type": "Perlin Power Fractal Latent (PPF Noise)"
+  },
+  "196": {
+    "inputs": {
+      "input_mode": "simple",
+      "lora_count": 3,
+      "lora_name_1": "None",
+      "lora_wt_1": 1,
+      "model_str_1": 1,
+      "clip_str_1": 1,
+      "lora_name_2": "None",
+      "lora_wt_2": 1,
+      "model_str_2": 1,
+      "clip_str_2": 1,
+      "lora_name_3": "None",
+      "lora_wt_3": 1,
+      "model_str_3": 1,
+      "clip_str_3": 1,
+      "lora_name_4": "None",
+      "lora_wt_4": 1,
+      "model_str_4": 1,
+      "clip_str_4": 1,
+      "lora_name_5": "None",
+      "lora_wt_5": 1,
+      "model_str_5": 1,
+      "clip_str_5": 1,
+      "lora_name_6": "None",
+      "lora_wt_6": 1,
+      "model_str_6": 1,
+      "clip_str_6": 1,
+      "lora_name_7": "None",
+      "lora_wt_7": 1,
+      "model_str_7": 1,
+      "clip_str_7": 1,
+      "lora_name_8": "None",
+      "lora_wt_8": 1,
+      "model_str_8": 1,
+      "clip_str_8": 1,
+      "lora_name_9": "None",
+      "lora_wt_9": 1,
+      "model_str_9": 1,
+      "clip_str_9": 1,
+      "lora_name_10": "None",
+      "lora_wt_10": 1,
+      "model_str_10": 1,
+      "clip_str_10": 1,
+      "lora_name_11": "None",
+      "lora_wt_11": 1,
+      "model_str_11": 1,
+      "clip_str_11": 1,
+      "lora_name_12": "None",
+      "lora_wt_12": 1,
+      "model_str_12": 1,
+      "clip_str_12": 1,
+      "lora_name_13": "None",
+      "lora_wt_13": 1,
+      "model_str_13": 1,
+      "clip_str_13": 1,
+      "lora_name_14": "None",
+      "lora_wt_14": 1,
+      "model_str_14": 1,
+      "clip_str_14": 1,
+      "lora_name_15": "None",
+      "lora_wt_15": 1,
+      "model_str_15": 1,
+      "clip_str_15": 1,
+      "lora_name_16": "None",
+      "lora_wt_16": 1,
+      "model_str_16": 1,
+      "clip_str_16": 1,
+      "lora_name_17": "None",
+      "lora_wt_17": 1,
+      "model_str_17": 1,
+      "clip_str_17": 1,
+      "lora_name_18": "None",
+      "lora_wt_18": 1,
+      "model_str_18": 1,
+      "clip_str_18": 1,
+      "lora_name_19": "None",
+      "lora_wt_19": 1,
+      "model_str_19": 1,
+      "clip_str_19": 1,
+      "lora_name_20": "None",
+      "lora_wt_20": 1,
+      "model_str_20": 1,
+      "clip_str_20": 1,
+      "lora_name_21": "None",
+      "lora_wt_21": 1,
+      "model_str_21": 1,
+      "clip_str_21": 1,
+      "lora_name_22": "None",
+      "lora_wt_22": 1,
+      "model_str_22": 1,
+      "clip_str_22": 1,
+      "lora_name_23": "None",
+      "lora_wt_23": 1,
+      "model_str_23": 1,
+      "clip_str_23": 1,
+      "lora_name_24": "None",
+      "lora_wt_24": 1,
+      "model_str_24": 1,
+      "clip_str_24": 1,
+      "lora_name_25": "None",
+      "lora_wt_25": 1,
+      "model_str_25": 1,
+      "clip_str_25": 1,
+      "lora_name_26": "None",
+      "lora_wt_26": 1,
+      "model_str_26": 1,
+      "clip_str_26": 1,
+      "lora_name_27": "None",
+      "lora_wt_27": 1,
+      "model_str_27": 1,
+      "clip_str_27": 1,
+      "lora_name_28": "None",
+      "lora_wt_28": 1,
+      "model_str_28": 1,
+      "clip_str_28": 1,
+      "lora_name_29": "None",
+      "lora_wt_29": 1,
+      "model_str_29": 1,
+      "clip_str_29": 1,
+      "lora_name_30": "None",
+      "lora_wt_30": 1,
+      "model_str_30": 1,
+      "clip_str_30": 1,
+      "lora_name_31": "None",
+      "lora_wt_31": 1,
+      "model_str_31": 1,
+      "clip_str_31": 1,
+      "lora_name_32": "None",
+      "lora_wt_32": 1,
+      "model_str_32": 1,
+      "clip_str_32": 1,
+      "lora_name_33": "None",
+      "lora_wt_33": 1,
+      "model_str_33": 1,
+      "clip_str_33": 1,
+      "lora_name_34": "None",
+      "lora_wt_34": 1,
+      "model_str_34": 1,
+      "clip_str_34": 1,
+      "lora_name_35": "None",
+      "lora_wt_35": 1,
+      "model_str_35": 1,
+      "clip_str_35": 1,
+      "lora_name_36": "None",
+      "lora_wt_36": 1,
+      "model_str_36": 1,
+      "clip_str_36": 1,
+      "lora_name_37": "None",
+      "lora_wt_37": 1,
+      "model_str_37": 1,
+      "clip_str_37": 1,
+      "lora_name_38": "None",
+      "lora_wt_38": 1,
+      "model_str_38": 1,
+      "clip_str_38": 1,
+      "lora_name_39": "None",
+      "lora_wt_39": 1,
+      "model_str_39": 1,
+      "clip_str_39": 1,
+      "lora_name_40": "None",
+      "lora_wt_40": 1,
+      "model_str_40": 1,
+      "clip_str_40": 1,
+      "lora_name_41": "None",
+      "lora_wt_41": 1,
+      "model_str_41": 1,
+      "clip_str_41": 1,
+      "lora_name_42": "None",
+      "lora_wt_42": 1,
+      "model_str_42": 1,
+      "clip_str_42": 1,
+      "lora_name_43": "None",
+      "lora_wt_43": 1,
+      "model_str_43": 1,
+      "clip_str_43": 1,
+      "lora_name_44": "None",
+      "lora_wt_44": 1,
+      "model_str_44": 1,
+      "clip_str_44": 1,
+      "lora_name_45": "None",
+      "lora_wt_45": 1,
+      "model_str_45": 1,
+      "clip_str_45": 1,
+      "lora_name_46": "None",
+      "lora_wt_46": 1,
+      "model_str_46": 1,
+      "clip_str_46": 1,
+      "lora_name_47": "None",
+      "lora_wt_47": 1,
+      "model_str_47": 1,
+      "clip_str_47": 1,
+      "lora_name_48": "None",
+      "lora_wt_48": 1,
+      "model_str_48": 1,
+      "clip_str_48": 1,
+      "lora_name_49": "None",
+      "lora_wt_49": 1,
+      "model_str_49": 1,
+      "clip_str_49": 1
+    },
+    "class_type": "LoRA Stacker"
+  },
+  "202": {
+    "inputs": {
+      "strength": 0.9,
+      "start_percent": 0,
+      "end_percent": 0.9,
+      "positive": [
+        "14",
+        0
+      ],
+      "negative": [
+        "14",
+        1
+      ],
+      "control_net": [
+        "203",
+        0
+      ],
+      "image": [
+        "205",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "203": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "204",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "204": {
+    "inputs": {
+      "start_percent": 0,
+      "control_net_weights": [
+        "245",
+        0
+      ],
+      "latent_keyframe": [
+        "206",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "205": {
+    "inputs": {
+      "image": "image-021.jpg",
+      "choose file to upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "206": {
+    "inputs": {
+      "index_strengths": "0=0.08, 1=0.15, 2=0.20, 3=0.20, 4=0.21, 5=0.24, 6=0.25, 7=0.25, 8=0.25, 9=0.25, 10=0.27, 11=0.29, 12=0.30, 13=0.30, 14=0.30, 15=0.30, 16=0.30, 17=0.29, 18=0.30, 19=0.35, 20=0.41, 21=0.46, 22=0.61, 23=1.00, 24=1.00, 25=0.61, 26=0.46, 27=0.41, 28=0.35, 29=0.30, 30=0.29, 31=0.30, 32=0.30, 33=0.30, 34=0.30, 35=0.30, 36=0.29, 37=0.27, 38=0.25, 39=0.25, 40=0.25, 41=0.25, 42=0.24, 43=0.21, 44=0.20, 45=0.20, 46=0.15, 47=0.08\n\n\n\n"
+    },
+    "class_type": "LatentKeyframeGroup"
+  },
+  "207": {
+    "inputs": {
+      "sampler_state": "Sample",
+      "add_noise": "enable",
+      "noise_seed": 6,
+      "steps": 20,
+      "cfg": 10,
+      "sampler_name": "ddpm",
+      "scheduler": "karras",
+      "start_at_step": 5,
+      "end_at_step": 20,
+      "return_with_leftover_noise": "disable",
+      "preview_method": "auto",
+      "vae_decode": "true",
+      "model": [
+        "187",
+        0
+      ],
+      "positive": [
+        "284",
+        0
+      ],
+      "negative": [
+        "284",
+        1
+      ],
+      "latent_image": [
+        "192",
+        0
+      ],
+      "optional_vae": [
+        "189",
+        4
+      ]
+    },
+    "class_type": "KSampler Adv. (Efficient)"
+  },
+  "244": {
+    "inputs": {
+      "base_multiplier": 0.88,
+      "flip_weights": false
+    },
+    "class_type": "ScaledSoftControlNetWeights"
+  },
+  "245": {
+    "inputs": {
+      "base_multiplier": 0.913,
+      "flip_weights": false
+    },
+    "class_type": "ScaledSoftControlNetWeights"
+  },
+  "246": {
+    "inputs": {
+      "sampler_state": "Sample",
+      "add_noise": "enable",
+      "noise_seed": 7,
+      "steps": 20,
+      "cfg": 10,
+      "sampler_name": "ddpm",
+      "scheduler": "karras",
+      "start_at_step": 5,
+      "end_at_step": 20,
+      "return_with_leftover_noise": "disable",
+      "preview_method": "auto",
+      "vae_decode": "true",
+      "model": [
+        "207",
+        0
+      ],
+      "positive": [
+        "253",
+        0
+      ],
+      "negative": [
+        "253",
+        1
+      ],
+      "latent_image": [
+        "207",
+        3
+      ],
+      "optional_vae": [
+        "207",
+        4
+      ]
+    },
+    "class_type": "KSampler Adv. (Efficient)"
+  },
+  "253": {
+    "inputs": {
+      "strength": 1.0000000000000007,
+      "start_percent": 0,
+      "end_percent": 0.9,
+      "positive": [
+        "273",
+        0
+      ],
+      "negative": [
+        "10",
+        0
+      ],
+      "control_net": [
+        "254",
+        0
+      ],
+      "image": [
+        "207",
+        5
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "254": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "255",
+        1
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "255": {
+    "inputs": {
+      "base_multiplier": 0.825,
+      "flip_weights": false
+    },
+    "class_type": "ScaledSoftControlNetWeights"
+  },
+  "273": {
+    "inputs": {
+      "text": "\"0\" :\"griffith from berserk standing\",\n\"16\" :\"griffith from berserk\",\n\"24\" :\"griffith from berserk\",\n\"32\" : \"griffith from berserk\"\n",
+      "max_frames": 120,
+      "pre_text": "water colour painting",
+      "app_text": "",
+      "pw_a": 0,
+      "pw_b": 0,
+      "pw_c": 0,
+      "pw_d": 0,
+      "clip": [
+        "189",
+        5
+      ]
+    },
+    "class_type": "BatchPromptSchedule"
+  },
+  "274": {
+    "inputs": {
+      "strength": 0.9,
+      "start_percent": 0,
+      "end_percent": 0.9,
+      "positive": [
+        "202",
+        0
+      ],
+      "negative": [
+        "202",
+        1
+      ],
+      "control_net": [
+        "275",
+        0
+      ],
+      "image": [
+        "276",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "275": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "277",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "276": {
+    "inputs": {
+      "image": "image-022.jpg",
+      "choose file to upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "277": {
+    "inputs": {
+      "start_percent": 0,
+      "control_net_weights": [
+        "279",
+        0
+      ],
+      "latent_keyframe": [
+        "278",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "278": {
+    "inputs": {
+      "index_strengths": "0=0.00, 1=0.00, 2=0.00, 3=0.00, 4=0.00, 5=0.00, 6=0.00, 7=0.00, 8=0.00, 9=0.00, 10=0.00, 11=0.00, 12=0.00, 13=0.00, 14=0.00, 15=0.00, 16=0.08, 17=0.15, 18=0.20, 19=0.20, 20=0.21, 21=0.24, 22=0.25, 23=0.25, 24=0.25, 25=0.25, 26=0.27, 27=0.29, 28=0.30, 29=0.30, 30=0.30, 31=0.30, 32=0.30, 33=0.29, 34=0.30, 35=0.35, 36=0.41, 37=0.46, 38=0.61, 39=1.00, 40=1.00, 41=0.61, 42=0.46, 43=0.41, 44=0.35, 45=0.30, 46=0.29, 47=0.30, 48=0.30, 49=0.30, 50=0.30, 51=0.30, 52=0.29, 53=0.27, 54=0.25, 55=0.25, 56=0.25, 57=0.25, 58=0.24, 59=0.21, 60=0.20, 61=0.20, 62=0.15, 63=0.08"
+    },
+    "class_type": "LatentKeyframeGroup"
+  },
+  "279": {
+    "inputs": {
+      "base_multiplier": 0.88,
+      "flip_weights": false
+    },
+    "class_type": "ScaledSoftControlNetWeights"
+  },
+  "281": {
+    "inputs": {
+      "frame_rate": 14,
+      "loop_count": 0,
+      "filename_prefix": "AnimateDiff/AD_",
+      "format": "video/h264-mp4",
+      "pingpong": false,
+      "save_image": true,
+      "Sync playback": null,
+      "vhs_gif_preview__0": "/view?filename=AD__00001_.mp4&subfolder=AnimateDiff&type=output&format=video%2Fh264-mp4",
+      "images": [
+        "246",
+        5
+      ]
+    },
+    "class_type": "VHS_VideoCombine"
+  },
+  "284": {
+    "inputs": {
+      "strength": 0.9,
+      "start_percent": 0,
+      "end_percent": 0.9,
+      "positive": [
+        "274",
+        0
+      ],
+      "negative": [
+        "274",
+        1
+      ],
+      "control_net": [
+        "285",
+        0
+      ],
+      "image": [
+        "286",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "285": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "287",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "286": {
+    "inputs": {
+      "image": "image-023.jpg",
+      "choose file to upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "287": {
+    "inputs": {
+      "start_percent": 0,
+      "control_net_weights": [
+        "289",
+        0
+      ],
+      "latent_keyframe": [
+        "288",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "288": {
+    "inputs": {
+      "index_strengths": "0=0.00, 1=0.00, 2=0.00, 3=0.00, 4=0.00, 5=0.00, 6=0.00, 7=0.00, 8=0.00, 9=0.00, 10=0.00, 11=0.00, 12=0.00, 13=0.00, 14=0.00, 15=0.00, 16=0.00, 17=0.00, 18=0.00, 19=0.00, 20=0.00, 21=0.00, 22=0.00, 23=0.00, 24=0.00, 25=0.00, 26=0.00, 27=0.00, 28=0.00, 29=0.00, 30=0.00, 31=0.00, 32=0.08, 33=0.15, 34=0.20, 35=0.20, 36=0.21, 37=0.24, 38=0.25, 39=0.25, 40=0.25, 41=0.25, 42=0.27, 43=0.29, 44=0.30, 45=0.30, 46=0.30, 47=0.30, 48=0.30, 49=0.29, 50=0.30, 51=0.35, 52=0.41, 53=0.46, 54=0.61, 55=1.00, 56=1.00, 57=0.61, 58=0.46, 59=0.41, 60=0.35, 61=0.30, 62=0.29, 63=0.30\n\n\n\n"
+    },
+    "class_type": "LatentKeyframeGroup"
+  },
+  "289": {
+    "inputs": {
+      "base_multiplier": 0.88,
+      "flip_weights": false
+    },
+    "class_type": "ScaledSoftControlNetWeights"
+  }
+}

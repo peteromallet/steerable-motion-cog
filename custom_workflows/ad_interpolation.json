@@ -1,0 +1,964 @@
+{
+  "5": {
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "batch_size": 16
+    },
+    "class_type": "EmptyLatentImage"
+  },
+  "6": {
+    "inputs": {
+      "text": "apple",
+      "clip": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "7": {
+    "inputs": {
+      "text": "(worst quality, low quality:1.4)",
+      "clip": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "49",
+        0
+      ],
+      "vae": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "10": {
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "52",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer"
+  },
+  "11": {
+    "inputs": {
+      "vae_name": "vae-ft-mse-840000-ema-pruned.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "35": {
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "PreviewImage"
+  },
+  "49": {
+    "inputs": {
+      "seed": 77627181828047,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "60",
+        0
+      ],
+      "positive": [
+        "171",
+        0
+      ],
+      "negative": [
+        "171",
+        1
+      ],
+      "latent_image": [
+        "60",
+        1
+      ]
+    },
+    "class_type": "KSampler"
+  },
+  "52": {
+    "inputs": {
+      "ckpt_name": "Realistic_Vision_V5.0.safetensors",
+      "beta_schedule": "sqrt_linear (AnimateDiff)"
+    },
+    "class_type": "CheckpointLoaderSimpleWithNoiseSelect"
+  },
+  "54": {
+    "inputs": {
+      "strength": 1,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "control_net": [
+        "55",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "55": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "57",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "57": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "58",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "58": {
+    "inputs": {
+      "batch_index": 0,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "60": {
+    "inputs": {
+      "model_name": "mm_sd_v14.ckpt",
+      "unlimited_area_hack": false,
+      "beta_schedule": "sqrt_linear (AnimateDiff)",
+      "model": [
+        "52",
+        0
+      ],
+      "latents": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "AnimateDiffLoaderV1"
+  },
+  "64": {
+    "inputs": {
+      "image": "1.jpg",
+      "choose file to upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "67": {
+    "inputs": {
+      "strength": 0.6,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "54",
+        0
+      ],
+      "negative": [
+        "54",
+        1
+      ],
+      "control_net": [
+        "68",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "68": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "69",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "69": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "70",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "70": {
+    "inputs": {
+      "batch_index": 1,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "72": {
+    "inputs": {
+      "strength": 0.5,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "67",
+        0
+      ],
+      "negative": [
+        "67",
+        1
+      ],
+      "control_net": [
+        "73",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "73": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "74",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "74": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "75",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "75": {
+    "inputs": {
+      "batch_index": 2,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "77": {
+    "inputs": {
+      "strength": 0.4,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "72",
+        0
+      ],
+      "negative": [
+        "72",
+        1
+      ],
+      "control_net": [
+        "78",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "78": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "79",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "79": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "80",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "80": {
+    "inputs": {
+      "batch_index": 3,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "82": {
+    "inputs": {
+      "strength": 0.3,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "77",
+        0
+      ],
+      "negative": [
+        "77",
+        1
+      ],
+      "control_net": [
+        "83",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "83": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "84",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "84": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "85",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "85": {
+    "inputs": {
+      "batch_index": 4,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "87": {
+    "inputs": {
+      "strength": 0.2,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "82",
+        0
+      ],
+      "negative": [
+        "82",
+        1
+      ],
+      "control_net": [
+        "88",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "88": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "89",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "89": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "90",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "90": {
+    "inputs": {
+      "batch_index": 5,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "92": {
+    "inputs": {
+      "strength": 0.1,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "87",
+        0
+      ],
+      "negative": [
+        "87",
+        1
+      ],
+      "control_net": [
+        "93",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "93": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "94": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "95": {
+    "inputs": {
+      "batch_index": 6,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "97": {
+    "inputs": {
+      "strength": 0.05,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "92",
+        0
+      ],
+      "negative": [
+        "92",
+        1
+      ],
+      "control_net": [
+        "98",
+        0
+      ],
+      "image": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "98": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "99": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "100": {
+    "inputs": {
+      "batch_index": 7,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "142": {
+    "inputs": {
+      "strength": 0.1,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "97",
+        0
+      ],
+      "negative": [
+        "97",
+        1
+      ],
+      "control_net": [
+        "143",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "143": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "144",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "144": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "145",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "145": {
+    "inputs": {
+      "batch_index": 8,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "146": {
+    "inputs": {
+      "image": "download (8).png",
+      "choose file to upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "147": {
+    "inputs": {
+      "strength": 0.2,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "142",
+        0
+      ],
+      "negative": [
+        "142",
+        1
+      ],
+      "control_net": [
+        "148",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "148": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "149",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "149": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "150",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "150": {
+    "inputs": {
+      "batch_index": 9,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "151": {
+    "inputs": {
+      "strength": 0.3,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "147",
+        0
+      ],
+      "negative": [
+        "147",
+        1
+      ],
+      "control_net": [
+        "152",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "152": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "153",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "153": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "154",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "154": {
+    "inputs": {
+      "batch_index": 10,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "155": {
+    "inputs": {
+      "strength": 0.4,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "151",
+        0
+      ],
+      "negative": [
+        "151",
+        1
+      ],
+      "control_net": [
+        "156",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "156": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "157",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "157": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "158",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "158": {
+    "inputs": {
+      "batch_index": 11,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "159": {
+    "inputs": {
+      "strength": 0.5,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "155",
+        0
+      ],
+      "negative": [
+        "155",
+        1
+      ],
+      "control_net": [
+        "160",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "160": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "161",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "161": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "162",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "162": {
+    "inputs": {
+      "batch_index": 12,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "163": {
+    "inputs": {
+      "strength": 0.6,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "159",
+        0
+      ],
+      "negative": [
+        "159",
+        1
+      ],
+      "control_net": [
+        "164",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "164": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "165",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "165": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "166": {
+    "inputs": {
+      "batch_index": 13,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "167": {
+    "inputs": {
+      "strength": 0.7,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "163",
+        0
+      ],
+      "negative": [
+        "163",
+        1
+      ],
+      "control_net": [
+        "168",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "168": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "169",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "169": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "170",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "170": {
+    "inputs": {
+      "batch_index": 14,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "171": {
+    "inputs": {
+      "strength": 1,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "167",
+        0
+      ],
+      "negative": [
+        "167",
+        1
+      ],
+      "control_net": [
+        "172",
+        0
+      ],
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced"
+  },
+  "172": {
+    "inputs": {
+      "control_net_name": "control_v11f1e_sd15_tile.pth",
+      "timestep_keyframe": [
+        "173",
+        0
+      ]
+    },
+    "class_type": "ControlNetLoaderAdvanced"
+  },
+  "173": {
+    "inputs": {
+      "start_percent": 0,
+      "latent_keyframe": [
+        "174",
+        0
+      ]
+    },
+    "class_type": "TimestepKeyframe"
+  },
+  "174": {
+    "inputs": {
+      "batch_index": 15,
+      "strength": 1
+    },
+    "class_type": "LatentKeyframe"
+  },
+  "177": {
+    "inputs": {
+      "frame_rate": 16,
+      "loop_count": 0,
+      "filename_prefix": "Enabled",
+      "format": "image/gif",
+      "pingpong": false,
+      "save_image": true,
+      "ad_gif_preview__0": "/view?filename=Enabled_00001_.gif&subfolder=&type=output&format=image%2Fgif",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "ADE_AnimateDiffCombine"
+  }
+}

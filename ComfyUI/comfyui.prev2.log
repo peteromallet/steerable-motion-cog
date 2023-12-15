@@ -1,0 +1,113 @@
+** ComfyUI startup time: 2023-12-15 16:59:50.120596
+** Platform: Linux
+** Python version: 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]
+** Python executable: /home/ubuntu/mambaforge/bin/python
+** Log path: /home/ubuntu/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 48677 MB, total RAM 96567 MB
+xformers version: 0.0.23+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA RTX A6000 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using xformers cross attention
+[36;20m[comfy_mtb] | INFO -> loaded [96m55[0m nodes successfuly[0m
+### Loading: ComfyUI-Manager (V1.13.7)
+### ComfyUI Revision: 1822 [a5056cfb] | Released on '2023-12-15'
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[34mFizzleDorf Custom Nodes: [92mLoaded[0m
+
+Import times for custom nodes:
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+   0.0 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-AnimateDiff
+   0.1 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.2 seconds: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI_FizzNodes
+   0.4 seconds: /home/ubuntu/ComfyUI/custom_nodes/steerable-motion
+   0.7 seconds: /home/ubuntu/ComfyUI/custom_nodes/comfy_mtb
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: /home/ubuntu/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - This warning can be ignored, you should not be using the deprecated AnimateDiff Combine node anyway. If you are, use Video Combine from ComfyUI-VideoHelperSuite instead. ffmpeg could not be found. Outputs that require it have been disabled
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+Using xformers attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using xformers attention in VAE
+Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] Realistic_Vision_V5.0
+Vae:
+  [1] vae-ft-mse-840000-ema-pruned
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/ComfyUI/custom_nodes/ComfyUI_FizzNodes/ScheduledNodes.py", line 153, in animate
+    pos_cur_prompt, pos_nxt_prompt, weight = interpolate_prompt_series(pos, max_frames, start_frame, pre_text, app_text, pw_a, pw_b, pw_c, pw_d, print_output)
+  File "/home/ubuntu/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py", line 79, in interpolate_prompt_series
+    if sorted_prompts[0][0] != "0":
+IndexError: list index out of range
+
+Prompt executed in 1.48 seconds
+got prompt
+/home/ubuntu/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py:128: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  cur_prompt_series[f] = ''
+/home/ubuntu/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py:129: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  nxt_prompt_series[f] = ''
+[] []
+Requested to load CLIPVisionModelProjection
+Loading 1 new model
+[] []
+[] []
+[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15_v2.ckpt
+/home/ubuntu/mambaforge/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+[AnimateDiffEvo] - [0;32mINFO[0m - Sliding context window activated - latents passed in (52) greater than context_length 16.
+[AnimateDiffEvo] - [0;32mINFO[0m - Using motion module mm_sd_v15_v2.ckpt version v2.
+Requested to load BaseModel
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load AnimateDiffModel
+Loading 5 new models
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [01:49<00:00,  7.33s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [01:49<00:00,  7.28s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Comfy-VFI: Clearing cache...
+Comfy-VFI: Done cache clearing
+Comfy-VFI: Clearing cache...
+Comfy-VFI: Done cache clearing
+Comfy-VFI: Clearing cache...
+Comfy-VFI: Done cache clearing
+Comfy-VFI: Clearing cache...
+Comfy-VFI: Done cache clearing
+Comfy-VFI: Clearing cache...
+Comfy-VFI: Done cache clearing
+Comfy-VFI: Final clearing cache...
+Comfy-VFI: Done cache clearing
+Prompt executed in 153.17 seconds
+
+Stopped server

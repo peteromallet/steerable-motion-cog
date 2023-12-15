@@ -1,0 +1,251 @@
+{
+  "187": {
+    "inputs": {
+      "model_name": "mm_sd_v15_v2.ckpt",
+      "beta_schedule": "sqrt_linear (AnimateDiff)",
+      "motion_scale": 1,
+      "apply_v2_models_properly": false,
+      "model": [
+        "301",
+        0
+      ],
+      "context_options": [
+        "342",
+        0
+      ]
+    },
+    "class_type": "ADE_AnimateDiffLoaderWithContext"
+  },
+  "189": {
+    "inputs": {
+      "ckpt_name": "Realistic_Vision_V5.0.safetensors",
+      "vae_name": "vae-ft-mse-840000-ema-pruned.safetensors",
+      "clip_skip": -2,
+      "lora_name": "None",
+      "lora_model_strength": 1,
+      "lora_clip_strength": 1,
+      "positive": "",
+      "negative": "",
+      "token_normalization": "none",
+      "weight_interpretation": "comfy",
+      "empty_latent_width": 512,
+      "empty_latent_height": 512,
+      "batch_size": 16
+    },
+    "class_type": "Efficient Loader"
+  },
+  "207": {
+    "inputs": {
+      "add_noise": "enable",
+      "noise_seed": 6,
+      "steps": 20,
+      "cfg": 10,
+      "sampler_name": "ddpm",
+      "scheduler": "karras",
+      "start_at_step": 5,
+      "end_at_step": 20,
+      "return_with_leftover_noise": "disable",
+      "preview_method": "auto",
+      "vae_decode": "true",
+      "model": [
+        "187",
+        0
+      ],
+      "positive": [
+        "353",
+        0
+      ],
+      "negative": [
+        "353",
+        1
+      ],
+      "latent_image": [
+        "189",
+        3
+      ],
+      "optional_vae": [
+        "189",
+        4
+      ]
+    },
+    "class_type": "KSampler Adv. (Efficient)"
+  },
+  "281": {
+    "inputs": {
+      "frame_rate": 14,
+      "loop_count": 0,
+      "filename_prefix": "creative_interpolation_results/AD_",
+      "format": "video/h264-mp4",
+      "pingpong": false,
+      "save_image": true,
+      "crf": 20,
+      "videopreview": {
+        "hidden": false,
+        "paused": false,
+        "params": {
+          "filename": "AD__00282.mp4",
+          "subfolder": "AnimateDiff",
+          "type": "output",
+          "format": "video/h264-mp4"
+        }
+      },
+      "images": [
+        "292",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine"
+  },
+  "292": {
+    "inputs": {
+      "ckpt_name": "stmfnet.pth",
+      "clear_cache_after_n_frames": 14,
+      "multiplier": 2,
+      "duplicate_first_last_frames": true,
+      "frames": [
+        "354",
+        2
+      ]
+    },
+    "class_type": "STMFNet VFI"
+  },
+  "294": {
+    "inputs": {
+      "ipadapter_file": "ip-adapter_sd15.bin"
+    },
+    "class_type": "IPAdapterModelLoader"
+  },
+  "297": {
+    "inputs": {
+      "clip_name": "pytorch_model.bin"
+    },
+    "class_type": "CLIPVisionLoader"
+  },
+  "300": {
+    "inputs": {
+      "ipadapter_plus": false,
+      "noise": 0,
+      "weight_1": 1,
+      "weight_2": 1,
+      "weight_3": 1,
+      "weight_4": 1,
+      "clip_vision": [
+        "297",
+        0
+      ],
+      "image_1": [
+        "323",
+        0
+      ]
+    },
+    "class_type": "IPAdapterEncoder"
+  },
+  "301": {
+    "inputs": {
+      "weight": 0.85,
+      "weight_type": "original",
+      "ipadapter": [
+        "294",
+        0
+      ],
+      "embeds": [
+        "300",
+        0
+      ],
+      "model": [
+        "189",
+        0
+      ]
+    },
+    "class_type": "IPAdapterApplyEncoded"
+  },
+  "323": {
+    "inputs": {
+      "directory": "input",
+      "image_load_cap": 0,
+      "skip_first_images": 0,
+      "select_every_nth": 1
+    },
+    "class_type": "VHS_LoadImagesPath"
+  },
+  "332": {
+    "inputs": {
+      "images": [
+        "323",
+        0
+      ]
+    },
+    "class_type": "PreviewImage"
+  },
+  "342": {
+    "inputs": {
+      "context_length": 16,
+      "context_stride": 2,
+      "context_overlap": 2,
+      "context_schedule": "uniform",
+      "closed_loop": false
+    },
+    "class_type": "ADE_AnimateDiffUniformContextOptions"
+  },
+  "347": {
+    "inputs": {
+      "text": "\"0\" :\"\",\n\"12\" :\"\",\n\"24\" :\"\",\n\"36\" :\"\",\n\"48\" :\"\",\n\"60\" :\"\",\n\"72\" :\"\",\n\"84\" :\"\",\n\"96\" :\"\",\n\"108\" :\"\",\n\"120\" :\"\"\n",
+      "max_frames": 120,
+      "print_output": false,
+      "pre_text": "PRE",
+      "app_text": "APP",
+      "start_frame": 0,
+      "pw_a": 0,
+      "pw_b": 0,
+      "pw_c": 0,
+      "pw_d": 0,
+      "clip": [
+        "189",
+        5
+      ]
+    },
+    "class_type": "BatchPromptSchedule"
+  },
+  "352": {
+    "inputs": {
+      "text": "hands, hand, (worst quality, low quality:1.2)",
+      "clip": [
+        "189",
+        5
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "353": {
+    "inputs": {
+      "control_net_name": "control_v11u_sd15_tile_fp16.safetensors",
+      "frames_per_keyframe": 4,
+      "length_of_key_frame_influence": 0.9,
+      "cn_strength": 1,
+      "interpolation": "ease-in-out",
+      "positive": [
+        "347",
+        0
+      ],
+      "negative": [
+        "352",
+        0
+      ],
+      "images": [
+        "323",
+        0
+      ]
+    },
+    "class_type": "BatchCreativeInterpolation"
+  },
+  "354": {
+    "inputs": {
+      "split_index": 4,
+      "images": [
+        "207",
+        5
+      ]
+    },
+    "class_type": "VHS_SplitImages"
+  }
+}

@@ -1,0 +1,302 @@
+** ComfyUI startup time: 2023-12-15 18:12:06.319699
+** Platform: Linux
+** Python version: 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]
+** Python executable: /home/ubuntu/mambaforge/bin/python
+** Log path: /home/ubuntu/steerable-motion-cog/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 48677 MB, total RAM 96567 MB
+xformers version: 0.0.23+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA RTX A6000 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using xformers cross attention
+[36;20m[comfy_mtb] | INFO -> loaded [96m55[0m nodes successfuly[0m
+### Loading: ComfyUI-Manager (V1.13.7)
+### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[34mFizzleDorf Custom Nodes: [92mLoaded[0m
+
+Import times for custom nodes:
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/steerable-motion
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-AnimateDiff
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.2 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_FizzNodes
+   0.7 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/comfy_mtb
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - This warning can be ignored, you should not be using the deprecated AnimateDiff Combine node anyway. If you are, use Video Combine from ComfyUI-VideoHelperSuite instead. ffmpeg could not be found. Outputs that require it have been disabled
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+Install custom node 'Use Everywhere (UE Nodes)'
+install: ['https://github.com/chrisgoringe/cg-use-everywhere']
+Download: git clone 'https://github.com/chrisgoringe/cg-use-everywhere'
+0it [00:00, ?it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 257.0/257.0 [00:00<00:00, 996.22it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 257.0/257.0 [00:00<00:00, 994.77it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 176.0/176.0 [00:00<00:00, 600.93it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 176.0/176.0 [00:00<00:00, 600.31it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 507.0/507.0 [00:00<00:00, 759.80it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 507.0/507.0 [00:00<00:00, 759.39it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 311.0/311.0 [00:00<00:00, 445.99it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 311.0/311.0 [00:00<00:00, 445.80it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 311.0/311.0 [00:00<00:00, 408.62it/s]
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+Install custom node 'ComfyUI Impact Pack'
+install: ['https://github.com/ltdrdata/ComfyUI-Impact-Pack']
+Download: git clone 'https://github.com/ltdrdata/ComfyUI-Impact-Pack'
+0it [00:00, ?it/s]100%|████████████████████████████████████████████████████████████████████████████████████| 448.0/448.0 [00:00<00:00, 1725.73it/s]100%|████████████████████████████████████████████████████████████████████████████████████| 448.0/448.0 [00:00<00:00, 1723.73it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 100.0/100.0 [00:00<00:00, 354.29it/s]100%|█████████████████████████████████████████████████████████████████████████████████████| 100.0/100.0 [00:00<00:00, 354.04it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 2905.0/2905.0 [00:02<00:00, 1324.35it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 2905.0/2905.0 [00:02<00:00, 1324.15it/s]100%|███████████████████████████████████████████████████████████████████████████████████| 1917.0/1917.0 [00:02<00:00, 859.79it/s]100%|███████████████████████████████████████████████████████████████████████████████████| 1917.0/1917.0 [00:02<00:00, 859.69it/s]100%|███████████████████████████████████████████████████████████████████████████████████| 1917.0/1917.0 [00:02<00:00, 811.91it/s]
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', 'segment-anything']
+ Collecting segment-anything
+   Downloading segment_anything-1.0-py3-none-any.whl (36 kB)
+ Installing collected packages: segment-anything
+ Successfully installed segment-anything-1.0
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', 'scikit-image']
+ Requirement already satisfied: scikit-image in /home/ubuntu/mambaforge/lib/python3.10/site-packages (0.22.0)
+ Requirement already satisfied: numpy>=1.22 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (1.26.2)
+ Requirement already satisfied: scipy>=1.8 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (1.11.4)
+ Requirement already satisfied: networkx>=2.8 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (3.1)
+ Requirement already satisfied: pillow>=9.0.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (10.1.0)
+ Requirement already satisfied: imageio>=2.27 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (2.33.1)
+ Requirement already satisfied: tifffile>=2022.8.12 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (2023.12.9)
+ Requirement already satisfied: packaging>=21 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (23.1)
+ Requirement already satisfied: lazy_loader>=0.3 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from scikit-image) (0.3)
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', 'piexif']
+ Collecting piexif
+   Downloading piexif-1.1.3-py2.py3-none-any.whl (20 kB)
+ Installing collected packages: piexif
+ Successfully installed piexif-1.1.3
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', 'transformers']
+ Requirement already satisfied: transformers in /home/ubuntu/mambaforge/lib/python3.10/site-packages (4.36.1)
+ Requirement already satisfied: filelock in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (3.12.2)
+ Requirement already satisfied: huggingface-hub<1.0,>=0.19.3 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (0.19.4)
+ Requirement already satisfied: numpy>=1.17 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (1.26.2)
+ Requirement already satisfied: packaging>=20.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (23.1)
+ Requirement already satisfied: pyyaml>=5.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (6.0)
+ Requirement already satisfied: regex!=2019.12.17 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (2023.10.3)
+ Requirement already satisfied: requests in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (2.31.0)
+ Requirement already satisfied: tokenizers<0.19,>=0.14 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (0.15.0)
+ Requirement already satisfied: safetensors>=0.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (0.4.1)
+ Requirement already satisfied: tqdm>=4.27 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from transformers) (4.65.0)
+ Requirement already satisfied: fsspec>=2023.5.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers) (2023.12.2)
+ Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers) (4.7.1)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests->transformers) (3.1.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests->transformers) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests->transformers) (2.0.3)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests->transformers) (2023.11.17)
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', 'opencv-python-headless']
+ Requirement already satisfied: opencv-python-headless in /home/ubuntu/mambaforge/lib/python3.10/site-packages (4.8.1.78)
+ Requirement already satisfied: numpy>=1.21.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from opencv-python-headless) (1.26.2)
+Install: install script
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', 'install.py']
+[!] 
+100%|██████████| 51996128/51996128 [00:00<00:00, 254082997.79it/s]
+[!] 
+100%|██████████| 22484536/22484536 [00:00<00:00, 32051998.32it/s]
+[!] 
+100%|██████████| 54791722/54791722 [00:00<00:00, 97586357.18it/s] 
+ ### ComfyUI-Impact-Pack: Check dependencies
+ ### ComfyUI-Impact-Pack: Updating subpack
+ [Impact Pack] EXECUTE: ['/home/ubuntu/mambaforge/bin/python', 'install.py'] in '/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+ Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/e3893a92c5c1907136b6cc75404094db767c1e0cfefe1b43e87dad72af2e4c9f?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27face_yolov8m.pt%3B+filename%3D%22face_yolov8m.pt%22%3B&Expires=1702923250&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwMjkyMzI1MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlL2UzODkzYTkyYzVjMTkwNzEzNmI2Y2M3NTQwNDA5NGRiNzY3YzFlMGNmZWZlMWI0M2U4N2RhZDcyYWYyZTRjOWY%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=CYFYVtK-m0fyovFgRa-APB5kxkiWcxaCxt8nXAvbo9ih72PH5ekftiDrpNhv-Ur3VtJmnJk9Ml59tEXBZHSY54-1cs54oBXrSNPfrzIspNYmPkzbn2JMDB%7Ef1Uh4ZzHdeRgMrCP0Ll8NJqVCM757av9I%7EAUkAnQXnT27rq4XytT2FGBsZ3sfo6QOideADDdKtuCTzOUO-z1NPvbocOucS-8K7XHEZPxsNMq9fR2DhaaO7Pj5BwPGh4aYpgKUe5S4V6LRJSjLe7wCtV4OcsnDbw0ENEwGVWEwG0D4NebyktcDcfcOedlUm2eS6hxvEFbgBp8G-r8fN3VFurPV--2Uog__&Key-Pair-Id=KVTP0A1DKRTAX to /home/ubuntu/steerable-motion-cog/ComfyUI/models/ultralytics/bbox/face_yolov8m.pt
+ Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/30878cea9870964d4a238339e9dcff002078bbbaa1a058b07e11c167f67eca1c?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27hand_yolov8s.pt%3B+filename%3D%22hand_yolov8s.pt%22%3B&Expires=1702920160&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwMjkyMDE2MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzMwODc4Y2VhOTg3MDk2NGQ0YTIzODMzOWU5ZGNmZjAwMjA3OGJiYmFhMWEwNThiMDdlMTFjMTY3ZjY3ZWNhMWM%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=FguqM11Zdgx%7EZQ3qgPFMaeg-ci658%7EFKSm%7EbGV2CGno2kZV%7EIzpKvbHTTQSl%7EGblCipMuHmkOhq4XgiwWWZ9monoAs-HrVJs04xpti-AcRAVGVatUdiaplECUqUpausZpZeY2tUWeBteNPIOyLoGscsm1ti3NZvcgj2el%7ExCaemlbX8aouaG7ZJRDPYK-kXds2MMnvGWw1NQng%7E%7EeGr6MqP9N47HCeWqjKgFzkmcWMjCnDQcxKQxs-ovpPUJNe0Fcrr50fZtJkFhUHe7%7EQKF51M-kMxBkLpGf1ctWENoqnzp3qCSF21dlfNgY5s7GX%7EOigOlZgzmR%7EsjooZGV%7E5pnA__&Key-Pair-Id=KVTP0A1DKRTAX to /home/ubuntu/steerable-motion-cog/ComfyUI/models/ultralytics/bbox/hand_yolov8s.pt
+ Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/1fd7e562f240a5debd48bf737753de6fb60c63f8664121bb522f090a885d8254?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27person_yolov8m-seg.pt%3B+filename%3D%22person_yolov8m-seg.pt%22%3B&Expires=1702922285&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwMjkyMjI4NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzFmZDdlNTYyZjI0MGE1ZGViZDQ4YmY3Mzc3NTNkZTZmYjYwYzYzZjg2NjQxMjFiYjUyMmYwOTBhODg1ZDgyNTQ%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=YX5M0sgiPUrEK3ZNo5iuwm3jt9rRePtXpSZYVtwgY5AziqwD5wV2wg0ocBlvRkfqFrWiFSuJcZrf5sPYCMFjwDcpVhrhRVXjelXyxXoB9A87lBtGkMDBxttrt96MV4rm%7E3g9DD9OQqJJJRicr4oS9qDDKDyh3BLb74q71DHuvieu5He1b%7El90WlrfhOxAF-%7EMG33bqgIzXhg6WisMVpRaLBwQFHXR0r8Xt9pvshzWQQlJJldA0epP9xmDm9tSwnn7LRZrEo%7EHT0UfGG8vSd2y2pa%7EeisGcvpqQAlGWmwle-MGt%7ESTELkGGOBOAnuzUZ-rs5keZKRzBaXFRDxn9qVaA__&Key-Pair-Id=KVTP0A1DKRTAX to /home/ubuntu/steerable-motion-cog/ComfyUI/models/ultralytics/segm/person_yolov8m-seg.pt
+ req_path: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
+ [Impact Pack] EXECUTE: ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+ Collecting ultralytics!=8.0.177 (from -r requirements.txt (line 1))
+   Downloading ultralytics-8.0.227-py3-none-any.whl (660 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.5/660.5 kB 30.8 MB/s eta 0:00:00
+ Requirement already satisfied: matplotlib>=3.3.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.8.2)
+ Requirement already satisfied: numpy>=1.22.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.2)
+ Requirement already satisfied: opencv-python>=4.6.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.8.1.78)
+ Requirement already satisfied: pillow>=7.1.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.1.0)
+ Requirement already satisfied: pyyaml>=5.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0)
+ Requirement already satisfied: requests>=2.23.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
+ Requirement already satisfied: scipy>=1.4.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.11.4)
+ Requirement already satisfied: torch>=1.8.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.2)
+ Requirement already satisfied: torchvision>=0.9.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.2)
+ Requirement already satisfied: tqdm>=4.64.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.65.0)
+ Requirement already satisfied: pandas>=1.1.4 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.4)
+ Collecting seaborn>=0.11.0 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading seaborn-0.13.0-py3-none-any.whl (294 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 60.1 MB/s eta 0:00:00
+ Requirement already satisfied: psutil in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.5)
+ Collecting py-cpuinfo (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+ Collecting thop>=0.1.1 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading thop-0.1.1.post2209072238-py3-none-any.whl (15 kB)
+ Requirement already satisfied: contourpy>=1.0.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.46.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.1)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
+ Requirement already satisfied: pytz>=2020.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ Requirement already satisfied: tzdata>=2022.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.3)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.11.17)
+ Requirement already satisfied: filelock in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.12.2)
+ Requirement already satisfied: typing-extensions in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.7.1)
+ Requirement already satisfied: sympy in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
+ Requirement already satisfied: networkx in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1)
+ Requirement already satisfied: jinja2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
+ Requirement already satisfied: fsspec in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.12.2)
+ Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (8.9.2.26)
+ Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.3.1)
+ Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.0.2.54)
+ Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.3.2.106)
+ Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.4.5.107)
+ Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.0.106)
+ Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.18.1)
+ Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: triton==2.1.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0)
+ Requirement already satisfied: nvidia-nvjitlink-cu12 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.3.101)
+ Requirement already satisfied: six>=1.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
+ Installing collected packages: py-cpuinfo, seaborn, thop, ultralytics
+ Successfully installed py-cpuinfo-9.0.0 seaborn-0.13.0 thop-0.1.1.post2209072238 ultralytics-8.0.227
+ req_path: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
+ [Impact Pack] EXECUTE: ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+ Requirement already satisfied: ultralytics!=8.0.177 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (8.0.227)
+ Requirement already satisfied: matplotlib>=3.3.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.8.2)
+ Requirement already satisfied: numpy>=1.22.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.2)
+ Requirement already satisfied: opencv-python>=4.6.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.8.1.78)
+ Requirement already satisfied: pillow>=7.1.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.1.0)
+ Requirement already satisfied: pyyaml>=5.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0)
+ Requirement already satisfied: requests>=2.23.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
+ Requirement already satisfied: scipy>=1.4.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.11.4)
+ Requirement already satisfied: torch>=1.8.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.2)
+ Requirement already satisfied: torchvision>=0.9.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.2)
+ Requirement already satisfied: tqdm>=4.64.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.65.0)
+ Requirement already satisfied: pandas>=1.1.4 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.4)
+ Requirement already satisfied: seaborn>=0.11.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.13.0)
+ [!]Requirement already satisfied: psutil in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.5)
+  
+Requirement already satisfied: py-cpuinfo in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (9.0.0)
+ Requirement already satisfied: thop>=0.1.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.1.1.post2209072238)
+ Requirement already satisfied: contourpy>=1.0.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.46.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.1)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
+ Requirement already satisfied: pytz>=2020.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ Requirement already satisfied: tzdata>=2022.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.3)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.11.17)
+ Requirement already satisfied: filelock in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.12.2)
+ Requirement already satisfied: typing-extensions in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.7.1)
+ Requirement already satisfied: sympy in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
+ Requirement already satisfied: networkx in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1)
+ Requirement already satisfied: jinja2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
+ Requirement already satisfied: fsspec in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.12.2)
+ Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (8.9.2.26)
+ Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.3.1)
+ Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.0.2.54)
+ Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.3.2.106)
+ Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.4.5.107)
+ Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.0.106)
+ Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.18.1)
+ Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+ Requirement already satisfied: triton==2.1.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0)
+ Requirement already satisfied: nvidia-nvjitlink-cu12 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.3.101)
+ Requirement already satisfied: six>=1.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
+ req_path: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
+ ### ComfyUI-Impact-Pack: Check basic models
+ Downloading https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth to /home/ubuntu/steerable-motion-cog/ComfyUI/models/sams/sam_vit_b_01ec64.pth
+100%|██████████| 375042383/375042383 [00:01<00:00, 206939371.29it/s]
+ ### ComfyUI-Impact-Pack: onnx model directory created (/home/ubuntu/steerable-motion-cog/ComfyUI/models/onnx)
+Installation was successful.
+
+## ComfyUI-Manager: EXECUTE => ['/home/ubuntu/mambaforge/bin/python', '-m', 'pip', 'install', 'ultralytics']
+ Requirement already satisfied: ultralytics in /home/ubuntu/mambaforge/lib/python3.10/site-packages (8.0.227)
+ Requirement already satisfied: matplotlib>=3.3.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (3.8.2)
+ Requirement already satisfied: numpy>=1.22.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (1.26.2)
+ Requirement already satisfied: opencv-python>=4.6.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (4.8.1.78)
+ Requirement already satisfied: pillow>=7.1.2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (10.1.0)
+ Requirement already satisfied: pyyaml>=5.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (6.0)
+ Requirement already satisfied: requests>=2.23.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (2.31.0)
+ Requirement already satisfied: scipy>=1.4.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (1.11.4)
+ Requirement already satisfied: torch>=1.8.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (2.1.2)
+ Requirement already satisfied: torchvision>=0.9.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (0.16.2)
+ Requirement already satisfied: tqdm>=4.64.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (4.65.0)
+ Requirement already satisfied: pandas>=1.1.4 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (2.1.4)
+ Requirement already satisfied: seaborn>=0.11.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (0.13.0)
+ Requirement already satisfied: psutil in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (5.9.5)
+ Requirement already satisfied: py-cpuinfo in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (9.0.0)
+ Requirement already satisfied: thop>=0.1.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from ultralytics) (0.1.1.post2209072238)
+ Requirement already satisfied: contourpy>=1.0.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (4.46.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (23.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (3.1.1)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (2.8.2)
+ Requirement already satisfied: pytz>=2020.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics) (2023.3)
+ Requirement already satisfied: tzdata>=2022.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics) (2023.3)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (3.1.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (2.0.3)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (2023.11.17)
+ Requirement already satisfied: filelock in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (3.12.2)
+ Requirement already satisfied: typing-extensions in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (4.7.1)
+ Requirement already satisfied: sympy in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (1.12)
+ Requirement already satisfied: networkx in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (3.1)
+ Requirement already satisfied: jinja2 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (3.1.2)
+ Requirement already satisfied: fsspec in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (2023.12.2)
+ Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (12.1.105)
+ Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (12.1.105)
+ Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (12.1.105)
+ Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (8.9.2.26)
+ Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (12.1.3.1)
+ Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (11.0.2.54)
+ Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (10.3.2.106)
+ Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (11.4.5.107)
+ Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (12.1.0.106)
+ Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (2.18.1)
+ Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (12.1.105)
+ Requirement already satisfied: triton==2.1.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (2.1.0)
+ Requirement already satisfied: nvidia-nvjitlink-cu12 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.8.0->ultralytics) (12.3.101)
+ Requirement already satisfied: six>=1.5 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics) (1.16.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /home/ubuntu/mambaforge/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics) (1.3.0)
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json

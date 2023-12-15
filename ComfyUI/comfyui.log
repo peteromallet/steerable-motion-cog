@@ -1,0 +1,309 @@
+** ComfyUI startup time: 2023-12-15 18:14:45.852993
+** Platform: Linux
+** Python version: 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]
+** Python executable: /home/ubuntu/mambaforge/bin/python
+** Log path: /home/ubuntu/steerable-motion-cog/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 48677 MB, total RAM 96567 MB
+xformers version: 0.0.23+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA RTX A6000 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using xformers cross attention
+[36;20m[comfy_mtb] | INFO -> loaded [96m55[0m nodes successfuly[0m
+### Loading: ComfyUI-Manager (V1.13.7)
+### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+### Loading: ComfyUI-Impact-Pack (V4.47.1)
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+### Loading: ComfyUI-Impact-Pack (Subpack: V0.3.2)
+[Impact Pack] Wildcards loading done.
+[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+[34mFizzleDorf Custom Nodes: [92mLoaded[0m
+
+Import times for custom nodes:
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/cg-use-everywhere
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/steerable-motion
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-AnimateDiff
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+   0.0 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.1 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_FizzNodes
+   0.7 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/comfy_mtb
+   0.7 seconds: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - This warning can be ignored, you should not be using the deprecated AnimateDiff Combine node anyway. If you are, use Video Combine from ComfyUI-VideoHelperSuite instead. ffmpeg could not be found. Outputs that require it have been disabled
+got prompt
+ERROR:root:Failed to validate prompt for output 281:
+ERROR:root:* CheckpointLoaderSimpleWithNoiseSelect 480:
+ERROR:root:  - Value not in list: ckpt_name: 'SD1.5/epicrealism_naturalSin.safetensors' not in ['Counterfeit-V3.0_fp32.safetensors', 'Realistic_Vision_V5.0.safetensors', 'anything-v3-fp16-pruned.safetensors', 'v1-5-pruned-emaonly.ckpt']
+ERROR:root:* IPAdapterModelLoader 369:
+ERROR:root:  - Value not in list: ipadapter_file: 'ip-adapter-plus_sd15.bin' not in ['ip-adapter-plus_sd15.safetensors']
+ERROR:root:* CLIPVisionLoader 370:
+ERROR:root:  - Value not in list: clip_name: 'SD1.5/model.safetensors' not in ['pytorch_model.bin']
+ERROR:root:* BatchCreativeInterpolation 437:
+ERROR:root:  - Value not in list: control_net_name: 'sd15/sd15_control_v11f1e_tile_fp16.safetensors' not in ['control_v11f1e_sd15_tile.pth', 'control_v11u_sd15_tile_fp16.safetensors']
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 207:
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 436:
+ERROR:root:Output will be ignored
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus/IPAdapterPlus.py", line 384, in load_ipadapter_model
+    model = comfy.utils.load_torch_file(ckpt_path, safe_load=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/comfy/utils.py", line 12, in load_torch_file
+    if ckpt.lower().endswith(".safetensors"):
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+Prompt executed in 0.00 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 281:
+ERROR:root:* IPAdapterModelLoader 369:
+ERROR:root:  - Value not in list: ipadapter_file: 'ip-adapter-plus_sd15.bin' not in ['ip-adapter-plus_sd15.safetensors']
+ERROR:root:* CLIPVisionLoader 370:
+ERROR:root:  - Value not in list: clip_name: 'SD1.5/model.safetensors' not in ['pytorch_model.bin']
+ERROR:root:* BatchCreativeInterpolation 437:
+ERROR:root:  - Value not in list: control_net_name: 'sd15/sd15_control_v11f1e_tile_fp16.safetensors' not in ['control_v11f1e_sd15_tile.pth', 'control_v11u_sd15_tile_fp16.safetensors']
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 207:
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 436:
+ERROR:root:Output will be ignored
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus/IPAdapterPlus.py", line 384, in load_ipadapter_model
+    model = comfy.utils.load_torch_file(ckpt_path, safe_load=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/comfy/utils.py", line 12, in load_torch_file
+    if ckpt.lower().endswith(".safetensors"):
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+Prompt executed in 0.00 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 281:
+ERROR:root:* BatchCreativeInterpolation 437:
+ERROR:root:  - Value not in list: control_net_name: 'sd15/sd15_control_v11f1e_tile_fp16.safetensors' not in ['control_v11f1e_sd15_tile.pth', 'control_v11u_sd15_tile_fp16.safetensors']
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 207:
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 436:
+ERROR:root:Output will be ignored
+model_type EPS
+adm 0
+Using xformers attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using xformers attention in VAE
+missing {'cond_stage_model.clip_l.logit_scale', 'cond_stage_model.clip_l.text_projection'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/nodes.py", line 649, in load_vae
+    sd = comfy.utils.load_torch_file(vae_path)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/comfy/utils.py", line 12, in load_torch_file
+    if ckpt.lower().endswith(".safetensors"):
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+Prompt executed in 2.05 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 281:
+ERROR:root:* BatchCreativeInterpolation 437:
+ERROR:root:  - Value not in list: control_net_name: 'sd15/sd15_control_v11f1e_tile_fp16.safetensors' not in ['control_v11f1e_sd15_tile.pth', 'control_v11u_sd15_tile_fp16.safetensors']
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 207:
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 436:
+ERROR:root:Output will be ignored
+Using xformers attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using xformers attention in VAE
+Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_FizzNodes/ScheduledNodes.py", line 153, in animate
+    pos_cur_prompt, pos_nxt_prompt, weight = interpolate_prompt_series(pos, max_frames, start_frame, pre_text, app_text, pw_a, pw_b, pw_c, pw_d, print_output)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py", line 79, in interpolate_prompt_series
+    if sorted_prompts[0][0] != "0":
+IndexError: list index out of range
+
+Prompt executed in 0.30 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 281:
+ERROR:root:* BatchCreativeInterpolation 437:
+ERROR:root:  - Value not in list: control_net_name: 'sd15/sd15_control_v11f1e_tile_fp16.safetensors' not in ['control_v11f1e_sd15_tile.pth', 'control_v11u_sd15_tile_fp16.safetensors']
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 207:
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 436:
+ERROR:root:Output will be ignored
+/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py:128: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  cur_prompt_series[f] = ''
+/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py:129: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  nxt_prompt_series[f] = ''
+Requested to load SD1ClipModel
+Loading 1 new model
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/steerable-motion/SteerableMotion.py", line 323, in combined_function
+    control_net = control_net_loader.load_controlnet(control_net_name, timestep_keyframe)[0]
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/steerable-motion/imports/AdvancedControlNet/nodes.py", line 86, in load_controlnet
+    controlnet = load_controlnet(controlnet_path, timestep_keyframe)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/steerable-motion/imports/AdvancedControlNet/control.py", line 720, in load_controlnet
+    control = comfy_cn.load_controlnet(ckpt_path, model=model)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/comfy/controlnet.py", line 314, in load_controlnet
+    controlnet_data = comfy.utils.load_torch_file(ckpt_path, safe_load=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/comfy/utils.py", line 12, in load_torch_file
+    if ckpt.lower().endswith(".safetensors"):
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+Prompt executed in 8.44 seconds
+got prompt
+[] []
+Requested to load CLIPVisionModelProjection
+Loading 1 new model
+[] []
+[] []
+[] []
+[] []
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/nodes.py", line 1374, in save_images
+    img.save(os.path.join(full_output_folder, file), pnginfo=metadata, compress_level=self.compress_level)
+  File "/home/ubuntu/mambaforge/lib/python3.10/site-packages/PIL/Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+PermissionError: [Errno 13] Permission denied: '/home/ubuntu/steerable-motion-cog/ComfyUI/temp/ComfyUI_temp_neufp_00001_.png'
+
+Prompt executed in 3.69 seconds
+got prompt
+[] []
+[] []
+[] []
+[] []
+[] []
+[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15_v2.ckpt
+[AnimateDiffEvo] - [0;32mINFO[0m - Sliding context window activated - latents passed in (64) greater than context_length 16.
+[AnimateDiffEvo] - [0;32mINFO[0m - Using motion module mm_sd_v15_v2.ckpt version v2.
+Requested to load BaseModel
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load AnimateDiffModel
+Loading 7 new models
+
+Prompt executed in 18.10 seconds
+FETCH DATA from: /home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+got prompt
+ERROR:root:Failed to validate prompt for output 436:
+ERROR:root:* IPAdapterModelLoader 369:
+ERROR:root:  - Value not in list: ipadapter_file: 'ip-adapter-plus_sd15.bin' not in ['ip-adapter-plus_sd15.safetensors']
+ERROR:root:* CLIPVisionLoader 370:
+ERROR:root:  - Value not in list: clip_name: 'SD1.5/pytorch_model.bin' not in ['pytorch_model.bin']
+ERROR:root:* BatchCreativeInterpolation 437:
+ERROR:root:  - Value not in list: control_net_name: 'control_v11f1e_sd15_tile_fp16.safetensors' not in ['control_v11f1e_sd15_tile.pth', 'control_v11u_sd15_tile_fp16.safetensors']
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 207:
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 281:
+ERROR:root:Output will be ignored
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/videohelpersuite/load_images_nodes.py", line 136, in load_images
+    return load_images(directory, **kwargs)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/videohelpersuite/load_images_nodes.py", line 39, in load_images
+    raise FileNotFoundError(f"Directory '{directory} cannot be found.")
+FileNotFoundError: Directory 'ComfyUI/input/images cannot be found.
+
+Prompt executed in 0.51 seconds
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/videohelpersuite/load_images_nodes.py", line 136, in load_images
+    return load_images(directory, **kwargs)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/videohelpersuite/load_images_nodes.py", line 39, in load_images
+    raise FileNotFoundError(f"Directory '{directory} cannot be found.")
+FileNotFoundError: Directory 'ComfyUI/input/images cannot be found.
+
+Prompt executed in 0.36 seconds
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 153, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 83, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/execution.py", line 76, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/videohelpersuite/load_images_nodes.py", line 136, in load_images
+    return load_images(directory, **kwargs)
+  File "/home/ubuntu/steerable-motion-cog/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/videohelpersuite/load_images_nodes.py", line 39, in load_images
+    raise FileNotFoundError(f"Directory '{directory} cannot be found.")
+FileNotFoundError: Directory 'ComfyUI/input/images cannot be found.
+
+Prompt executed in 0.00 seconds
+
+Stopped server

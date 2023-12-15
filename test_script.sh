@@ -1,0 +1,1 @@
+cog predict -i starting_image_path=@21.jpg -i ending_image_path=@22.jpg -i positive_prompt="griffith from berserk" -i negative_prompt="bad image" -i motion_module="mm_sd_v14.ckpt" -i model="Counterfeit-V3.0_fp32.safetensors"

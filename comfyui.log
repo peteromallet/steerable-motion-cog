@@ -1,0 +1,313 @@
+** ComfyUI startup time: 2023-12-15 21:18:52.929853
+** Platform: Linux
+** Python version: 3.10.6 (main, Dec 15 2023, 11:05:36) [GCC 11.4.0]
+** Python executable: /root/.pyenv/versions/3.10.6/bin/python
+** Log path: /src/comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: /src/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 48677 MB, total RAM 96567 MB
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA RTX A6000 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using pytorch cross attention
+Collecting requirements-parser
+  Downloading requirements_parser-0.5.0-py3-none-any.whl (18 kB)
+Collecting types-setuptools>=57.0.0
+  Downloading types_setuptools-69.0.0.0-py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.2/51.2 kB 8.3 MB/s eta 0:00:00
+Installing collected packages: types-setuptools, requirements-parser
+Successfully installed requirements-parser-0.5.0 types-setuptools-69.0.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip available: 22.2.1 -> 23.3.1
+[notice] To update, run: pip install --upgrade pip
+Command executed successfully!
+[36;20m[comfy_mtb] | INFO -> loaded [96m39[0m nodes successfuly[0m
+[36;20m[comfy_mtb] | INFO -> Some nodes (23) could not be loaded. This can be ignored, but go to http://127.0.0.1:8188/mtb if you want more information.[0m
+### Loading: ComfyUI-Manager (V1.13.7)
+## ComfyUI-Manager: installing dependencies
+ Collecting GitPython
+   Downloading GitPython-3.1.40-py3-none-any.whl (190 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 190.6/190.6 kB 4.6 MB/s eta 0:00:00
+ Collecting matrix-client==0.4.0
+   Downloading matrix_client-0.4.0-py2.py3-none-any.whl (43 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.5/43.5 kB 10.2 MB/s eta 0:00:00
+ Collecting urllib3~=1.21
+   Downloading urllib3-1.26.18-py2.py3-none-any.whl (143 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.8/143.8 kB 40.5 MB/s eta 0:00:00
+ Requirement already satisfied: requests~=2.22 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matrix-client==0.4.0->-r /src/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (2.31.0)
+ Collecting gitdb<5,>=4.0.1
+   Downloading gitdb-4.0.11-py3-none-any.whl (62 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 22.3 MB/s eta 0:00:00
+ Collecting smmap<6,>=3.0.1
+   Downloading smmap-5.0.1-py3-none-any.whl (24 kB)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests~=2.22->matrix-client==0.4.0->-r /src/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (3.3.2)
+ Requirement already satisfied: idna<4,>=2.5 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests~=2.22->matrix-client==0.4.0->-r /src/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (3.6)
+ Requirement already satisfied: certifi>=2017.4.17 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests~=2.22->matrix-client==0.4.0->-r /src/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (2023.11.17)
+ Installing collected packages: urllib3, smmap, gitdb, matrix-client, GitPython
+   Attempting uninstall: urllib3
+     Found existing installation: urllib3 2.1.0
+     Uninstalling urllib3-2.1.0:
+       Successfully uninstalled urllib3-2.1.0
+ Successfully installed GitPython-3.1.40 gitdb-4.0.11 matrix-client-0.4.0 smmap-5.0.1 urllib3-1.26.18
+[!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[!] 
+[!] [notice] A new release of pip available: 22.2.1 -> 23.3.1
+[!] [notice] To update, run: pip install --upgrade pip
+## ComfyUI-Manager: installing dependencies done.
+### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+### Loading: ComfyUI-Impact-Pack (V4.47.1)
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json### ComfyUI-Impact-Pack: Reinstall dependencies (several dependencies are missing.)
+
+### ComfyUI-Impact-Pack: Check dependencies
+### ComfyUI-Impact-Pack: Updating subpack
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[Impact Pack] EXECUTE: ['/root/.pyenv/versions/3.10.6/bin/python', 'install.py'] in '/src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+req_path: /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
+[Impact Pack] EXECUTE: ['/root/.pyenv/versions/3.10.6/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+Collecting ultralytics!=8.0.177
+  Downloading ultralytics-8.0.227-py3-none-any.whl (660 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.5/660.5 kB 16.6 MB/s eta 0:00:00
+Requirement already satisfied: psutil in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.6)
+Requirement already satisfied: pillow>=7.1.2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.1.0)
+Collecting py-cpuinfo
+  Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+Collecting seaborn>=0.11.0
+  Downloading seaborn-0.13.0-py3-none-any.whl (294 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 53.5 MB/s eta 0:00:00
+Requirement already satisfied: pandas>=1.1.4 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.4)
+Requirement already satisfied: scipy>=1.4.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.11.4)
+Collecting thop>=0.1.1
+  Downloading thop-0.1.1.post2209072238-py3-none-any.whl (15 kB)
+Requirement already satisfied: tqdm>=4.64.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.66.1)
+Requirement already satisfied: torchvision>=0.9.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.2)
+Requirement already satisfied: pyyaml>=5.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0.1)
+Requirement already satisfied: requests>=2.23.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: torch>=1.8.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.2)
+Requirement already satisfied: numpy>=1.22.2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.2)
+Requirement already satisfied: opencv-python>=4.6.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.8.1.78)
+Collecting matplotlib>=3.3.0
+  Downloading matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 42.8 MB/s eta 0:00:00
+Collecting pyparsing>=2.3.1
+  Downloading pyparsing-3.1.1-py3-none-any.whl (103 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.1/103.1 kB 32.6 MB/s eta 0:00:00
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.46.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 90.6 MB/s eta 0:00:00
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (310 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 58.6 MB/s eta 0:00:00
+Collecting cycler>=0.10
+  Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting kiwisolver>=1.3.1
+  Downloading kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 82.4 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.7 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
+Requirement already satisfied: packaging>=20.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.2)
+Requirement already satisfied: pytz>=2020.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+Requirement already satisfied: idna<4,>=2.5 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.6)
+Requirement already satisfied: charset-normalizer<4,>=2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.3.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.18)
+Requirement already satisfied: certifi>=2017.4.17 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.11.17)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.4.5.107)
+Requirement already satisfied: filelock in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.13.1)
+Requirement already satisfied: jinja2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (8.9.2.26)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.3.2.106)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: triton==2.1.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0)
+Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.18.1)
+Requirement already satisfied: networkx in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.1)
+Requirement already satisfied: typing-extensions in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.9.0)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.3.1)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.0.106)
+Requirement already satisfied: sympy in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.0.2.54)
+Requirement already satisfied: fsspec in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.12.2)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.3.101)
+Requirement already satisfied: six>=1.5 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
+Requirement already satisfied: mpmath>=0.19 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
+Installing collected packages: py-cpuinfo, pyparsing, kiwisolver, fonttools, cycler, contourpy, matplotlib, seaborn, thop, ultralytics
+Successfully installed contourpy-1.2.0 cycler-0.12.1 fonttools-4.46.0 kiwisolver-1.4.5 matplotlib-3.8.2 py-cpuinfo-9.0.0 pyparsing-3.1.1 seaborn-0.13.0 thop-0.1.1.post2209072238 ultralytics-8.0.227
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip available: 22.2.1 -> 23.3.1
+[notice] To update, run: pip install --upgrade pip
+req_path: /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
+[Impact Pack] EXECUTE: ['/root/.pyenv/versions/3.10.6/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+Requirement already satisfied: ultralytics!=8.0.177 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (8.0.227)
+Requirement already satisfied: matplotlib>=3.3.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.8.2)
+Requirement already satisfied: requests>=2.23.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: numpy>=1.22.2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.2)
+Requirement already satisfied: tqdm>=4.64.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.66.1)
+Requirement already satisfied: pyyaml>=5.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0.1)
+Requirement already satisfied: psutil in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.6)
+Requirement already satisfied: pandas>=1.1.4 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.4)
+Requirement already satisfied: seaborn>=0.11.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.13.0)
+Requirement already satisfied: pillow>=7.1.2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.1.0)
+Requirement already satisfied: torchvision>=0.9.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.2)
+Requirement already satisfied: thop>=0.1.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.1.1.post2209072238)
+Requirement already satisfied: torch>=1.8.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.2)
+Requirement already satisfied: py-cpuinfo in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (9.0.0)
+Requirement already satisfied: opencv-python>=4.6.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.8.1.78)
+Requirement already satisfied: scipy>=1.4.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.11.4)
+Requirement already satisfied: packaging>=20.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.2)
+Requirement already satisfied: contourpy>=1.0.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.2.0)
+Requirement already satisfied: python-dateutil>=2.7 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
+Requirement already satisfied: pyparsing>=2.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.4.5)
+Requirement already satisfied: fonttools>=4.22.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.46.0)
+Requirement already satisfied: cycler>=0.10 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.12.1)
+Requirement already satisfied: pytz>=2020.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+Requirement already satisfied: certifi>=2017.4.17 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.11.17)
+Requirement already satisfied: charset-normalizer<4,>=2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.3.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.18)
+Requirement already satisfied: idna<4,>=2.5 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.6)
+Requirement already satisfied: jinja2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
+Requirement already satisfied: filelock in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.13.1)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: networkx in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.1)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (8.9.2.26)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: triton==2.1.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0)
+Requirement already satisfied: typing-extensions in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.9.0)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.3.2.106)
+Requirement already satisfied: fsspec in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.12.2)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.0.106)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.0.2.54)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.1.105)
+Requirement already satisfied: sympy in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (11.4.5.107)
+Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.18.1)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (12.3.101)
+Requirement already satisfied: six>=1.5 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
+Requirement already satisfied: mpmath>=0.19 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip available: 22.2.1 -> 23.3.1
+[notice] To update, run: pip install --upgrade pip
+req_path: /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
+[Impact Pack] EXECUTE: ['/root/.pyenv/versions/3.10.6/bin/python', '-m', 'pip', 'install', '-r', '/src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt'] in 'None'
+Collecting segment-anything
+  Downloading segment_anything-1.0-py3-none-any.whl (36 kB)
+Collecting scikit-image
+  Downloading scikit_image-0.22.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 76.9 MB/s eta 0:00:00
+Collecting piexif
+  Downloading piexif-1.1.3-py2.py3-none-any.whl (20 kB)
+Requirement already satisfied: transformers in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from -r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (4.36.1)
+Collecting opencv-python-headless
+  Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 MB 42.2 MB/s eta 0:00:00
+Requirement already satisfied: networkx>=2.8 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from scikit-image->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 2)) (3.2.1)
+Requirement already satisfied: packaging>=21 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from scikit-image->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 2)) (23.2)
+Requirement already satisfied: numpy>=1.22 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from scikit-image->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 2)) (1.26.2)
+Requirement already satisfied: pillow>=9.0.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from scikit-image->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 2)) (10.1.0)
+Collecting imageio>=2.27
+  Downloading imageio-2.33.1-py3-none-any.whl (313 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.3/313.3 kB 51.2 MB/s eta 0:00:00
+Requirement already satisfied: scipy>=1.8 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from scikit-image->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 2)) (1.11.4)
+Collecting lazy_loader>=0.3
+  Downloading lazy_loader-0.3-py3-none-any.whl (9.1 kB)
+Collecting tifffile>=2022.8.12
+  Downloading tifffile-2023.12.9-py3-none-any.whl (223 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.6/223.6 kB 49.1 MB/s eta 0:00:00
+Requirement already satisfied: tqdm>=4.27 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (4.66.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.19.3 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (0.19.4)
+Requirement already satisfied: tokenizers<0.19,>=0.14 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (0.15.0)
+Requirement already satisfied: requests in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (2.31.0)
+Requirement already satisfied: safetensors>=0.3.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (0.4.1)
+Requirement already satisfied: pyyaml>=5.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (6.0.1)
+Requirement already satisfied: filelock in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (3.13.1)
+Requirement already satisfied: regex!=2019.12.17 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (2023.10.3)
+Requirement already satisfied: fsspec>=2023.5.0 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (2023.12.2)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (4.9.0)
+Requirement already satisfied: idna<4,>=2.5 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests->transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (3.6)
+Requirement already satisfied: charset-normalizer<4,>=2 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests->transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (3.3.2)
+Requirement already satisfied: certifi>=2017.4.17 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests->transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (2023.11.17)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /root/.pyenv/versions/3.10.6/lib/python3.10/site-packages (from requests->transformers->-r /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt (line 4)) (1.26.18)
+Installing collected packages: segment-anything, tifffile, piexif, opencv-python-headless, lazy_loader, imageio, scikit-image
+Successfully installed imageio-2.33.1 lazy_loader-0.3 opencv-python-headless-4.8.1.78 piexif-1.1.3 scikit-image-0.22.0 segment-anything-1.0 tifffile-2023.12.9
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip available: 22.2.1 -> 23.3.1
+[notice] To update, run: pip install --upgrade pip
+### ComfyUI-Impact-Pack: Check basic models
+[Impact Pack] Wildcards loading done.
+### Loading: ComfyUI-Impact-Pack (Subpack: V0.3.2)
+[34mFizzleDorf Custom Nodes: [92mLoaded[0m
+
+Import times for custom nodes:
+   0.0 seconds: /src/ComfyUI/custom_nodes/cg-use-everywhere
+   0.0 seconds: /src/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: /src/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+   0.0 seconds: /src/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+   0.0 seconds: /src/ComfyUI/custom_nodes/steerable-motion
+   0.0 seconds: /src/ComfyUI/custom_nodes/ComfyUI-AnimateDiff
+   0.0 seconds: /src/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+   0.0 seconds: /src/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+   0.2 seconds: /src/ComfyUI/custom_nodes/ComfyUI_FizzNodes
+   2.2 seconds: /src/ComfyUI/custom_nodes/comfy_mtb
+   2.6 seconds: /src/ComfyUI/custom_nodes/ComfyUI-Manager
+  17.7 seconds: /src/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] Realistic_Vision_V5.0
+Vae:
+  [1] vae-ft-mse-840000-ema-pruned
+/src/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py:128: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  cur_prompt_series[f] = ''
+/src/ComfyUI/custom_nodes/ComfyUI_FizzNodes/BatchFuncs.py:129: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '' has dtype incompatible with float64, please explicitly cast to a compatible dtype first.
+  nxt_prompt_series[f] = ''
+[] []
+Requested to load CLIPVisionModelProjection
+Loading 1 new model
+[] []
+[] []
+[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15_v2.ckpt
+[AnimateDiffEvo] - [0;32mINFO[0m - Sliding context window activated - latents passed in (20) greater than context_length 16.
+[AnimateDiffEvo] - [0;32mINFO[0m - Using motion module mm_sd_v15_v2.ckpt version v2.
+Requested to load BaseModel
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load ControlNet
+Requested to load AnimateDiffModel
+Loading 5 new models
+100%|██████████| 15/15 [00:57<00:00,  3.84s/it]100%|██████████| 15/15 [00:57<00:00,  3.82s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Comfy-VFI: Clearing cache...
+Comfy-VFI: Done cache clearing
+Comfy-VFI: Final clearing cache...
+Comfy-VFI: Done cache clearing
+Prompt executed in 84.59 seconds

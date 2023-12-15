@@ -1,0 +1,34 @@
+build:
+  # set to true if your model requires a GPU
+  gpu: true
+
+  system_packages:
+    - ffmpeg
+
+  python_version: "3.10.6"
+
+  python_packages:
+    - torch
+    - torchsde
+    - einops
+    - transformers>=4.25.1
+    - safetensors>=0.3.0
+    - aiohttp
+    - accelerate
+    - pyyaml
+    - Pillow
+    - scipy
+    - tqdm
+    - numexpr==2.8.7
+    - opencv-python
+    - pandas
+    - psutil
+    - torchvision
+    - torchaudio
+    - torchsde
+    - cupy
+    - simpleeval
+    - websocket-client==1.6.3
+
+# predict.py defines how predictions are run on your model
+predict: "infinite_interpolation.py:Predictor"
